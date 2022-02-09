@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<table>
+ <tr>
+     <td>
+         <form onsubmit="event.preventDefault(); Submit();" autocomplete="off">
+                    <div id="global"> 
+
+                <div id="nomes">
+                    
+                    <h1> insira os dados para finalizar o seu pedido </h1>
+
+
+                    <label> nome </label>
+                    <ul><input type="text"  name="nome" id="nome"></ul> 
+                   
+                    <label> sobrenome </label>
+                        <ul><input type="text" name="sobrenome" id="sobrenome"></ul>
+                        <!-- nome do usuário -->
+                </div>
+                <div id="entrega">
+                    <label>Endereço da entrega</label>
+                    <ul><input type="text" name="enderecoEntrega" id="enderecoEntrega"></ul> 
+
+                    <!-- endereço de entrega -->
+                </div>
+                <div id="residencia">
+                    <label>número</label>
+                    <ul><input type="number" name="numero" id="numero"></ul>
+
+
+                    <input id="botao" type="submit" value="enviar" name="enviar">
+                <!-- numero da casa/apartameto e botão -->
+                </div>
+                </form>
+                </td>
+                    <table id="list" class="lista">
+                        <thead>
+                                <tr>
+                                    <th>nome</th>
+                                    <th>sobrenome</th>
+                                    <th>casa/apartamento</th>
+                                    <th>número</th>
+                                    <th></th>
+                    
+                                </tr>
+                
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>                           
+        </td>
+    </tr>
+</table>   
+
+
+<script src="Script.js"></script>
+</body>
+</html>
